@@ -1,0 +1,162 @@
+body {
+  background-color: black;
+  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+nav {
+  margin-left: 100px;
+  padding-top: 20px;
+  margin-right: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 128px;
+  margin-right: -128px;
+  list-style-type: none;
+}
+.nav-menu li {
+  padding-left: 150px;
+}
+
+.social-links ul {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+
+section {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.name h2 {
+  font-weight: 600;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+.name h3 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  opacity: 50%;
+}
+
+.hero-text {
+  padding-right: 300px;
+}
+
+.hero-text h1 {
+  font-size: 120px;
+  padding-right: 200px;
+  margin-bottom: 0px;
+  margin-top: 100px;
+}
+.hero-text p {
+  font-size: 22px;
+  margin-top: 0;
+  padding-right: 1 00px;
+}
+button {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 80px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.project-block {
+  display: flex;
+  flex-direction: row;
+  background-color: #191919;
+}
+.project-image img {
+  height: 260px;
+  width: 400px;
+  padding: 10px;
+}
+.project-details {
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.project-details h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.project-details p {
+  font-weight: 300;
+  font-size: 20px;
+  opacity: 50%;
+  padding-right: 200px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill-block {
+  background-color: #191919;
+  padding: 100px;
+}
+.skill-block p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text p {
+  margin-right: 500px;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.about-text h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+self-photo {
+  height: 400px;
+  width: 300px;
+}
+
+.social-links {
+  padding-right: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.social-links img {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: hsl(0, 0%, 10%);
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
