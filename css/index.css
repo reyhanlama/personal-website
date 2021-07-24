@@ -121,6 +121,11 @@ section h2 {
   padding: 10px;
 }
 
+.project-block img {
+  height: auto;
+  width: auto;
+}
+
 .project-block h3 {
   font-weight: 300;
   font-size: 18px;

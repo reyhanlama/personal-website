@@ -89,7 +89,10 @@ section {
   background: rgb(48, 48, 48);
   margin-bottom: 20px;
   padding: 10px;
-
+  img {
+    height: auto;
+    width: auto;
+  }
   h3 {
     font-weight: 300;
     font-size: 18px;
