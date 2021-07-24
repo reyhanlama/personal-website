@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+body {
+  margin: 30px;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 30px;
+  padding-right: 50px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 50%;
+  margin: 0;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.3fr 1fr;
+      grid-template-columns: 0.3fr 1fr;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo {
+  margin-top: -10px;
+}
+
+nav .mainMenu {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .mainMenu li {
+  list-style-type: none;
+}
+
+nav .mainMenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-section {
+  margin-top: 30px;
+}
+
+.hero-text {
+  margin-bottom: 30px;
+}
+
+.hero {
+  margin-bottom: 5px;
+}
+
+.sub-hero {
+  font-weight: 200;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.email {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid white;
+  margin: 0;
+}
+
+.email .email-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+}
+
+.email .email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.email .email-block p {
+  padding-left: 5px;
+}
+
+section {
+  margin-top: 60px;
+}
+
+.project-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #6b6b6b;
+  border-radius: 2px solid #6b6b6b;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.project-block h3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.project-block p {
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 50%;
+  margin-top: 0;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about img {
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.in-touch h1 {
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.in-touch a {
+  padding-right: 10px;
+}
+
+footer {
+  margin-right: -30px;
+  margin-left: -30px;
+  background: #303030;
+  margin-bottom: -30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
