@@ -5,36 +5,37 @@ body {
   background-color: black;
   color: white;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 30px;
+    padding-right: 50px;
+    line-height: 1.1;
+  }
+  a {
+    font-size: 16px;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 36px;
+  }
 
-h1 {
-  font-weight: 700;
-  font-size: 50px;
-  margin-top: 30px;
-  padding-right: 50px;
-  line-height: 1.1;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 36px;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 18px;
-  margin: 0;
-}
-h4 {
-  font-weight: 500;
-  font-size: 12px;
-  opacity: 50%;
-  margin: 0;
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 50%;
+    margin: 0;
+  }
 }
 
 nav {
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
+  grid-template-columns: 0.2fr 1fr;
   flex-direction: row;
   justify-content: space-between;
   .logo {
@@ -54,10 +55,22 @@ nav {
     }
   }
 }
+.email img {
+  max-width: 400px;
+}
+
+section {
+  margin-top: 30px;
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
 
 .hero-section {
-  margin-top: 30px;
+  margin-top: 20px;
 }
+
 .hero-text {
   margin-bottom: 30px;
 }
@@ -67,43 +80,16 @@ nav {
 .sub-hero {
   font-weight: 200;
   font-size: 16px;
-
   padding-right: 20px;
-}
-
-.email {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr;
-  justify-content: space-evenly;
-  border: 1px solid white;
-  margin: 0;
-
-  .email-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-  }
-
-  .email-block {
-    display: flex;
-    justify-content: start;
-    p {
-      padding-left: 5px;
-    }
-  }
-}
-section {
-  margin-top: 60px;
 }
 
 .project-block {
   display: flex;
   flex-direction: column;
-  background: rgb(107, 107, 107);
-  border-radius: 2px solid rgb(107, 107, 107);
+  background: rgb(48, 48, 48);
   margin-bottom: 20px;
   padding: 10px;
+
   h3 {
     font-weight: 300;
     font-size: 18px;
@@ -149,4 +135,105 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    .mainMenu li {
+      padding-left: 100px;
+    }
+  }
+  .email img {
+    max-width: 450px;
+  }
+  .project-block {
+    display: flex;
+    flex-direction: row;
+    img {
+      height: 200px;
+    }
+    .project-details {
+      padding: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  nav {
+    margin: 60px;
+    img {
+      height: 100px;
+    }
+    .mainMenu li {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .hero-section {
+    margin-left: 60px;
+    .title {
+      h3 {
+        font-size: 40px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+    }
+  }
+  .hero-text {
+    margin-right: 600px;
+    .hero {
+      font-size: 100px;
+    }
+    .sub-hero {
+      font-size: 18px;
+    }
+  }
+  .email img {
+    max-width: 600px;
+  }
+  section {
+    margin: 60px;
+  }
+  .project-block {
+    img {
+      height: 300px;
+    }
+    .project-details {
+      padding-right: 100px;
+      h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .about {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      max-width: 500px;
+      max-width: 500px;
+      margin-right: 100px;
+    }
+    p {
+      margin-right: 200px;
+    }
+  }
+  .in-touch {
+    h1 {
+      font-size: 80px;
+      width: 500px;
+    }
+  }
 }
