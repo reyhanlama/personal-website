@@ -39,7 +39,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   .logo {
-    margin-top: -10px;
+    margin-top: 5px;
   }
   .mainMenu {
     margin: 0px;
@@ -56,14 +56,14 @@ nav {
   }
 }
 .email img {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 section {
-  margin-top: 30px;
+  margin-top: 50px;
   h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -75,7 +75,7 @@ section {
   margin-bottom: 30px;
 }
 .hero {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .sub-hero {
   font-weight: 200;
@@ -105,19 +105,41 @@ section {
     margin-top: 0;
   }
 }
-
+.skills {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  .single-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    margin: 0px;
+    padding: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    img {
+      height: 100px;
+    }
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   img {
-    max-height: 150px;
-    max-width: 150px;
-    border-radius: 50%;
+    min-width: 200px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-weight: 200;
+    font-size: 16px;
   }
 }
 
 .in-touch {
+  padding: 0;
+  margin: 0;
   h1 {
     font-weight: 100;
     margin-bottom: 20px;
@@ -162,6 +184,23 @@ footer {
     }
     p {
       font-size: 14px;
+    }
+  }
+  .skills {
+    display: block;
+    .single-skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    h3 {
+      padding-right: 50px;
+      padding-top: 0;
     }
   }
 }
@@ -233,10 +272,66 @@ footer {
       margin-right: 200px;
     }
   }
-  .in-touch {
-    h1 {
-      font-size: 80px;
-      width: 500px;
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .single-skill {
+      padding: 150px;
     }
   }
+
+  .about {
+    margin: 0px;
+    .desc {
+      display: block;
+    }
+    img {
+      max-width: 400px;
+    }
+  }
+  .in-touch {
+    padding: 0;
+    margin: 0;
+    h1 {
+      font-size: 80px;
+      padding: 10px 300px 0px 0px;
+    }
+  }
+}
+// Animations //
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.project-block:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  transition: ease-out;
 }

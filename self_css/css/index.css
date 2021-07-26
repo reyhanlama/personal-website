@@ -51,7 +51,7 @@ nav {
 }
 
 nav .logo {
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 nav .mainMenu {
@@ -78,16 +78,16 @@ nav .mainMenu a {
 }
 
 .email img {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 section {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 section h2 {
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .hero-section {
@@ -99,7 +99,7 @@ section h2 {
 }
 
 .hero {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .sub-hero {
@@ -139,6 +139,39 @@ section h2 {
   margin-top: 0;
 }
 
+.skills {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .single-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  margin: 0px;
+  padding: 80px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.skills .single-skill img {
+  height: 100px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,12 +180,24 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about img {
-  max-height: 150px;
-  max-width: 150px;
-  border-radius: 50%;
+  min-width: 200px;
+  margin-top: 10px;
+}
+
+.about h3 {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.in-touch {
+  padding: 0;
+  margin: 0;
 }
 
 .in-touch h1 {
@@ -215,6 +260,36 @@ footer {
   }
   .project-block p {
     font-size: 14px;
+  }
+  .skills {
+    display: block;
+  }
+  .skills .single-skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about h3 {
+    padding-right: 50px;
+    padding-top: 0;
   }
 }
 
@@ -286,9 +361,81 @@ footer {
   .about p {
     margin-right: 200px;
   }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skills .single-skill {
+    padding: 150px;
+  }
+  .about {
+    margin: 0px;
+  }
+  .about .desc {
+    display: block;
+  }
+  .about img {
+    max-width: 400px;
+  }
+  .in-touch {
+    padding: 0;
+    margin: 0;
+  }
   .in-touch h1 {
     font-size: 80px;
-    width: 500px;
+    padding: 10px 300px 0px 0px;
   }
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.project-block:hover {
+  -webkit-transform: translateY(-0.5rem) scale(1.0125);
+          transform: translateY(-0.5rem) scale(1.0125);
+  -webkit-box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: ease-out;
+  transition: ease-out;
 }
 /*# sourceMappingURL=index.css.map */
