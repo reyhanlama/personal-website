@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+body {
+  margin: 30px;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 30px;
+  padding-right: 50px;
+  line-height: 1.1;
+}
+
+body a {
+  font-size: 16px;
+}
+
+body h2 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+body h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+body h4 {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 50%;
+  margin: 0;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo {
+  margin-top: 5px;
+}
+
+nav .mainMenu {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .mainMenu li {
+  list-style-type: none;
+}
+
+nav .mainMenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.email img {
+  max-width: 400px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-section {
+  margin-top: 20px;
+}
+
+.hero-text {
+  margin-bottom: 30px;
+}
+
+.hero {
+  margin-bottom: 10px;
+}
+
+.sub-hero {
+  font-weight: 200;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.project-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #303030;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.project-block img {
+  height: auto;
+  width: auto;
+}
+
+.project-block h3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.project-block p {
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 50%;
+  margin-top: 0;
+}
+
+.skills {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .single-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  margin: 0px;
+  padding: 80px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.skills .single-skill img {
+  height: 100px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about img {
+  min-width: 200px;
+  margin-top: 10px;
+}
+
+.about h3 {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.in-touch {
+  padding: 0;
+  margin: 0;
+}
+
+.in-touch h1 {
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.in-touch a {
+  padding-right: 10px;
+}
+
+footer {
+  margin-right: -30px;
+  margin-left: -30px;
+  background: #303030;
+  margin-bottom: -30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .mainMenu li {
+    padding-left: 100px;
+  }
+  .email img {
+    max-width: 450px;
+  }
+  .project-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project-block img {
+    height: 200px;
+  }
+  .project-block .project-details {
+    padding: 20px;
+  }
+  .project-block p {
+    font-size: 14px;
+  }
+  .skills {
+    display: block;
+  }
+  .skills .single-skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about h3 {
+    padding-right: 50px;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  nav {
+    margin: 60px;
+  }
+  nav img {
+    height: 100px;
+  }
+  nav .mainMenu li a {
+    font-size: 20px;
+  }
+  .hero-section {
+    margin-left: 60px;
+  }
+  .hero-section .title h3 {
+    font-size: 40px;
+  }
+  .hero-section .title h4 {
+    font-size: 28px;
+  }
+  .hero-text {
+    margin-right: 600px;
+  }
+  .hero-text .hero {
+    font-size: 100px;
+  }
+  .hero-text .sub-hero {
+    font-size: 18px;
+  }
+  .email img {
+    max-width: 600px;
+  }
+  section {
+    margin: 60px;
+  }
+  .project-block img {
+    height: 300px;
+  }
+  .project-block .project-details {
+    padding-right: 100px;
+  }
+  .project-block .project-details h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .project-block .project-details p {
+    font-size: 16px;
+  }
+  .about {
+    margin: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about img {
+    max-width: 500px;
+    max-width: 500px;
+    margin-right: 100px;
+  }
+  .about p {
+    margin-right: 200px;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skills .single-skill {
+    padding: 150px;
+  }
+  .about {
+    margin: 0px;
+  }
+  .about .desc {
+    display: block;
+  }
+  .about img {
+    max-width: 400px;
+  }
+  .in-touch {
+    padding: 0;
+    margin: 0;
+  }
+  .in-touch h1 {
+    font-size: 80px;
+    padding: 10px 300px 0px 0px;
+  }
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.project-block:hover {
+  -webkit-transform: translateY(-0.5rem) scale(1.0125);
+          transform: translateY(-0.5rem) scale(1.0125);
+  -webkit-box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: ease-out;
+  transition: ease-out;
+}
+/*# sourceMappingURL=index.css.map */
